@@ -1,2 +1,8 @@
 #DEPENDECIES
 node_modules
+
+#ENVIRONMENT VARIABLES
+.env
+
+#DATABASE
+database/app.db
