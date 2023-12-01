@@ -1,7 +1,6 @@
 import fastify from 'fastify'
+import { MealsRoutes } from './routes/meals'
 
 export const app = fastify()
 
-app.get('/', async (request, reply) => {
-  return reply.send('Hello world')
-})
+app.register(MealsRoutes)
