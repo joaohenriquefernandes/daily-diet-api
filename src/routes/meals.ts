@@ -99,11 +99,15 @@ export async function MealsRoutes(app: FastifyInstance) {
 
       const longerDietSequence = longestSequenceOfOnes(sequence)
 
-      return reply.send({
+      const metrics = {
         totalMeals,
         totalMealsInDiet,
         totalMealsOutDiet,
         longerDietSequence,
+      }
+
+      return reply.send({
+        metrics,
       })
     },
   )

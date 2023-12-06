@@ -2,7 +2,7 @@ import { config } from 'dotenv'
 import { z } from 'zod'
 
 if (process.env.NODE_ENV === 'test') {
-  console.log('Testing')
+  config({ path: '.env.test' })
 } else {
   config()
 }
