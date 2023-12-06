@@ -1,0 +1,224 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-12-06T23:28:01.763Z",
+  "__export_source": "insomnia.desktop.app:v2023.4.0",
+  "resources": [
+    {
+      "_id": "req_401b902fe6af477ab2084db443f88f80",
+      "parentId": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "modified": 1701483661235,
+      "created": 1690495143995,
+      "url": "{{ _.baseURL }}/meals/metrics",
+      "name": "Get Metrics",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1690495143995,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "parentId": "wrk_0f552dfffd134f51bf4358496eeb0072",
+      "modified": 1690482989535,
+      "created": 1690482989535,
+      "name": "Meals",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1690482989535,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_0f552dfffd134f51bf4358496eeb0072",
+      "parentId": null,
+      "modified": 1690482944535,
+      "created": 1690482944535,
+      "name": "Desafio Daily Diet Api",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_77fc83f1265a4a0ab65098e01ad9a391",
+      "parentId": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "modified": 1701561032154,
+      "created": 1690494008139,
+      "url": "{{ _.baseURL }}/meals/6edccc4b-4c25-4cde-b964-b6b572a13223",
+      "name": "Delete Meal",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1690494008139,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fea07930ab7a4ab1b36bc92ee8dc1b8e",
+      "parentId": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "modified": 1701561006770,
+      "created": 1690492690455,
+      "url": "{{ _.baseURL }}/meals/6edccc4b-4c25-4cde-b964-b6b572a13223",
+      "name": "Update Meal",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Dinner\",\n\t\"description\": \"Rice and salad\",\n\t\"isOnTheDiet\": true,\n\t\"datetime\": \"2023-05-05 17:00:00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1690492690455,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c77ce2961989415ba1d3648edc86a6b9",
+      "parentId": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "modified": 1701892918054,
+      "created": 1690485243728,
+      "url": "{{ _.baseURL }}/meals/6b43010e-3e1b-4584-8079-559c0be5723f",
+      "name": "Get Meal",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1690485243728,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_642ea4850d004b429a395a986aa47448",
+      "parentId": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "modified": 1690494027998,
+      "created": 1690483314177,
+      "url": "{{ _.baseURL }}/meals",
+      "name": "List Meals",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1690483314177,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e632937fbb00480ebda74cf67d2149aa",
+      "parentId": "fld_c274ac3b50e54a80926c8ec8a0e37da4",
+      "modified": 1701894608325,
+      "created": 1690482990810,
+      "url": "{{ _.baseURL }}/meals",
+      "name": "Create Meal",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Dinner\",\n\t\"description\": \"rice and bean\",\n\t\"isOnTheDiet\": true,\n\t\"datetime\": \"2023-01-01 12:00:00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1690482990810,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_64043f06a62b5298465e88815630acd8d0caab94",
+      "parentId": "wrk_0f552dfffd134f51bf4358496eeb0072",
+      "modified": 1690482975008,
+      "created": 1690482944539,
+      "name": "Base Environment",
+      "data": {
+        "baseURL": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseURL"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1690482944539,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_64043f06a62b5298465e88815630acd8d0caab94",
+      "parentId": "wrk_0f552dfffd134f51bf4358496eeb0072",
+      "modified": 1701560617684,
+      "created": 1690482944542,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "sessionId",
+          "value": "181170b3-d819-4d36-9615-c5bec352577a",
+          "maxAge": 604800000,
+          "domain": "localhost",
+          "path": "/",
+          "hostOnly": true,
+          "creation": "2023-12-02T23:42:57.641Z",
+          "lastAccessed": "2023-12-02T23:42:57.641Z",
+          "id": "48959185399614835"
+        }
+      ],
+      "_type": "cookie_jar"
+    }
+  ]
+}
